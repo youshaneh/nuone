@@ -1,0 +1,256 @@
+<html>
+
+<head>
+    <title>SharkEC 靜態切版範例</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+
+    <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+
+
+    <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+
+    <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+        一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap" rel="stylesheet">
+
+    <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+
+    <!--這裡是你的主要切版樣式-->
+    <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+    </link>
+    <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+
+    <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <!--/這裡是你的主要切版樣式-->
+
+
+    <script>
+        //為了不讓jq-core爆炸，我們有全域的js物件
+        var MYAPP = {
+
+        };
+    </script>
+    <script type="text/javascript" src="js/jq-core.js"></script>
+
+    <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+    <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
+
+    <!--以下theme.js就是切樣版要加code的地方-->
+    <script type="text/javascript" src="js/theme.js"></script>
+    <!--以下theme.js就是切樣版要加code的地方-->
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <button id="menu-button"></button>
+            <ul id="menu" style="display: none;">
+                <li><a class="about" href="#section-promote" onclick="hideMenu()"></a></li>
+                <li><a class="service" href="#section-service" onclick="hideMenu()"></a></li>
+                <li><a class="care" href="#section-care" onclick="hideMenu()"></a></li>
+                <li><a class="faq" href="#section-faq" onclick="hideMenu()"></a></li>
+                <li><a class="reservation" href="#section-reservation" onclick="hideMenu()"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-cover">
+        <div class="section-cover-container">
+            <img class="slogan" src="images/NuOne_web_04.png">
+            <div class="logo-section">
+                <img class="logo" src="images/NuOne_web_03.png">
+                <div class="copyright">Copyright ©nuone.tw All Rights Reserved.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-promote" class="section-promote">
+        <div class="section-promote-container">
+            <img class="title" src="images/NuOne_web_05.png" />
+            <div class="subtitle">舒適自在的私密空間</div>
+            <div class="subtitle">以及最懂妳的除毛專家</div>
+            <div class="description">
+                nuone - 女性熱蠟除毛的專家，我們為女性打造<br />
+                最潔淨與最私密的專屬空間，身心放鬆體驗蛻變，<br />
+                來nuone除得無牽無掛，美得無拘無束。
+            </div>
+            <div class="last-line subtitle">
+                <div>自在</div>
+                <div class="line"></div>
+                <div>自信</div>
+                <div class="line"></div>
+                <div>自覺</div>
+            </div>
+        </div>
+    </section>
+    <div class="nu-deco"></div>
+    <section class="section-beauty">
+        <div class="section-beauty-container">
+            <div class="description">
+                成熟的美<br />
+                是一種不張揚，卻自然散發的美。
+            </div>
+            <div class="title-container">
+                <img class="title" src="images/NuOne_web_08-2.png" />
+            </div>
+            <div class="description">
+                它來自日常的細節與自信<br />
+                並不是想得到別人的讚美和認可<br />
+                而是滿懷信心地生活<br />
+                且能夠自豪地微笑。
+            </div>
+        </div>
+    </section>
+    <div class="desk-deco"></div>
+    <section id="section-service" class="section-service">
+        <div class="section-service-container">
+            <div class="title-container">
+                <img class="title" src="images/NuOne_web_10.png" />
+            </div>
+            <div class="price-container">
+                <div class="price-category">VIO</div>
+                <div class="price-items private">
+                    <div class="price-item private">私密處<br />全除</div>
+                    <div class="price-item private-price">nuone價 $2000</div>
+                    <div class="price-item private-price-original"></div>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="price-category"></div>
+                <div class="price-items line"></div>
+            </div>
+            <div class="price-container">
+                <div class="price-category">BODY</div>
+                <div class="price-items">
+                    <div class="price-item">腋下<br />$600</div>
+                    <div class="price-item">乳暈<br />$500</div>
+                    <div class="price-item">腹部<br />$1200</div>
+                    <div class="price-item">胸部<br />$1200</div>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="price-container">
+                    <div class="price-category"></div>
+                    <div class="price-items line"></div>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="price-category">HAND</div>
+                <div class="price-items">
+                    <div class="price-item">手指<br />$500</div>
+                    <div class="price-item">手臂<br />$500</div>
+                    <div class="price-item">前手臂<br />$800</div>
+                    <div class="price-item">全手<br />$1500</div>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="price-container">
+                    <div class="price-category"></div>
+                    <div class="price-items line"></div>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="price-category">LEG</div>
+                <div class="price-items">
+                    <div class="price-item">腳趾<br />$500</div>
+                    <div class="price-item">腳背<br />$500</div>
+                    <div class="price-item">小腿<br />$1000</div>
+                    <div class="price-item">全腿<br />$2000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-care" class="section-care">
+        <div class="section-care-container">
+            <img class="title" src="images/NuOne_web_15.png" />
+            <div class="subtitle">照顧自己品味生活</div>
+            <div class="description">
+                美麗的秘訣來自時時刻刻的關注自己，來自外在、<br />
+                內在的兼顧，而這不是一個人的奮戰。<br />
+                nuone會一同陪伴妳做好皮毛上的保養管理，讓<br />
+                妳贏得名為「美」的勝利。
+            </div>
+            <a class="more"></a>
+        </div>
+    </section>
+    <section id="section-faq" class="section-faq">
+        <div class="title-container">
+            <img class="title" src="images/NuOne_web_17.png" />
+        </div>
+        <div class="question"><span class="question-content">為什麼需要熱蠟除毛？</span></div>
+        <div class="answer">除掉多餘的毛髮，不僅能重獲新生的滑嫩肌，更能將低毛髮（過多）而導致的搔癢悶熱感及異味，迎接重未擁有的清爽感。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">第一次熱蠟除毛會痛嗎？</span></div>
+        <div class="answer">痛呀～其實每個人對於痛的感受不一樣，熱蠟除毛的上蠟過程中會有溫熱感，透過nUone專業除毛手法，能降低撕除的微痛感，給你全新舒適的服務。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">生理期期間能熱蠟除毛嗎？</span></div>
+        <div class="answer">女生月經來的期間，隨著體內激素的變化，讓肌膚對於熱、痛的感受較敏感，建議生理期過後再進行熱蠟除毛比較適合唷。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">熱蠟除毛多久進行一次？</span></div>
+        <div class="answer">由於每個人的體質與毛髮的生長速度及週期不同，約4~6週後毛髮會陸續生長至0.3公分左右（手可以拉起的長度）。這樣的長度通常能達到最佳的除毛過程與療效，即可預約熱蠟除毛時間。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">要做過幾次熱蠟除毛才不會再長？</span></div>
+        <div class="answer">每位女孩們毛髮生長速度會隨著固定週期熱蠟除毛的次數越多，越能明顯感受到毛髮延緩生長。若與自行刮除毛髮相較之下，透過熱蠟除毛的方式不僅會大幅降低毛髮量，毛髮還會更加柔細。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">孕媽咪能熱蠟除毛嗎？</span></div>
+        <div class="answer">建議如從未有私密處除毛經驗的孕婦們，需妊娠期滿4個月（16~19週）間進行首次熱蠟除毛。後續每4至6週定期除毛，至36週進行最後一次。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">除完毛之後要多久才能進行水上活動呢？</span></div>
+        <div class="answer">由於剛除完毛的肌膚較為敏感，建議勤保濕，讓肌膚至少有3至5天的修復期。主要還是依個人的肌膚實際狀況為主。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">什麼狀況不能熱蠟除毛？</span></div>
+        <div class="answer">患有糖尿病、靜脈炎（靜脈曲張）、傳染性皮膚病、先天免疫性失調（如蟹足腫、異位性皮膚炎）等其他皮膚病變者。<br/>曾在一週內接受以下醫療處置：皮下注射為整型（如玻尿酸、肉毒桿菌…等）、醫美換膚（如果酸、杏仁酸…等）以及相關皮膚科治療藥物（如口服Ａ酸…等）。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">除毛前需要做什麼事前準備呢？</span></div>
+        <div class="answer">只需要帶著愉悅的心情，準備好蛻變為全新的妳。</div>
+        <div class="line"></div>
+        <div class="question"><span class="question-content">除毛後有什麼重要注意事項？</span></div>
+        <div class="answer">
+            1.	勿接觸生水（游泳池、海水）。<br/>
+            2.	勿洗高溫熱水、日光浴、岩盤浴。<br/>
+            3.	需要穿著較為透氣、寬鬆的衣褲。<br/>
+            4.	勿用止汗劑、爽身粉。<br/>
+            5.	徹底清潔、時時保濕。<br/>
+            6.	使用專業保養品，避免使用含礦物油、酸類成分等產品。<br/>
+            7.	每週定期去角質，預防內包毛。<br/>
+            8.	依毛髮週期預約除毛，達成最佳除毛效果。 
+        </div>
+        <div class="line"></div>
+    </section>
+    <footer class="section-footer">
+        <div class="section-footer-container">
+            <img id="section-reservation" class="nuone" src="images/NuOne_web_21.png" />
+            <img class="be-your-own-kind" src="images/NuOne_web_22.png" />
+            <div class="store">
+                <div class="subtitle">桃園站前概念店</div> <a class="appointment"></a>
+            </div>
+            <div class="media-list">
+                <div class="img-container">
+                    <img class="media" src="images/NuOne_web_24-bt_ig.png" />
+                </div>
+                <div class="img-container">
+                    <img class="media" src="images/NuOne_web_25-bt_fb.png" />
+                </div>
+            </div>
+            <div class="copyright">Copyright ©nuone.tw All Rights Reserved.</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
